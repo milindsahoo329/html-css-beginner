@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>The Box Model</title>
+<style>
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+  background-color: gray;
+  margin: 0;
+  padding: 0;
+}
+
+#box {
+  background-color: blue;
+  padding: 10px 10px 10px 10px;
+  border: 10px solid black;
+  width: 400px;
+  margin: 40px;
+}
+
+#content {
+  background-color: #90EE90; /*green*/
+}
+
+h1 {
+  margin-bottom: 30px;
+}
+
+#bg {
+  width: 500px;
+  height: 500px;
+  background: url('sample.png') no-repeat top center;
+  background-repeat: no-repeat;
+  background-position: right;
+  background-color: blue;
+}
+
+</style>
+</head>
+<body>
+
+<h1>Box Model</h1>
+
+<div id="box">
+  <div id="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. </div>
+  <div id="bg">Lorem ipsum dolor sit amet, consectetur adipisicing elit. </div>
+</div>
+
+
+</body>
+</html>
